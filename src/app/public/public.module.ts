@@ -7,12 +7,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { BodyComponent } from './components/body/body.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RegistrationComponent } from './components/body/registration/registration.component';
+import { LoginComponent } from './components/header/login/login.component';
 
 @NgModule({
   imports: [
     CommonModule,
     PublicRoutingModule
   ],
-  declarations: [PublicComponent, HeaderComponent, BodyComponent, FooterComponent, RegistrationComponent]
+  declarations: [PublicComponent, HeaderComponent, BodyComponent, FooterComponent, RegistrationComponent, LoginComponent]
 })
 export class PublicModule { }

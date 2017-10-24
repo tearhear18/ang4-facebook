@@ -4,9 +4,13 @@ import { PublicComponent } from './public/public.component';
 import { PublicModule } from './public/public.module';
 
 const routes: Routes = [
-  { path: '', component: PublicComponent, children: [
-    { path: 'users', loadChildren: () => PublicModule }
-  ]}
+  { 
+    path: '', 
+    component: PublicComponent, 
+    children: [
+      { path: 'users', loadChildren: () => PublicModule }
+    ]
+  }
 ];
 
 @NgModule({
@@ -14,3 +18,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
