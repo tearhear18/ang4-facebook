@@ -10,6 +10,16 @@
         height: 77px;
         margin: auto;
         //background: rgba(0,0,0,0.1);
+        .left_section{
+            width: 500px;
+            height: 77px;
+            overflow: hidden;
+            img{
+                margin-top:25px;
+                width: 170px;
+                height: 33px;
+            }
+        }
         .right_section{
             width: 400px;
             height: 77px;
