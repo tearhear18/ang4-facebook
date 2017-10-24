@@ -1,0 +1,14 @@
+.header{
+    width: 100%;
+    display: block;
+    background-color: #3b5998;
+    background-image: linear-gradient(#4e69a2, #3b5998 50%);
+    border-bottom: 1px solid #133783;
+    overflow: hidden;
+    .container{
+        width: 980px;
+        height: 77px;
+        margin: auto;
+        background: rgba(0,0,0,0.1);
+    }
+}
