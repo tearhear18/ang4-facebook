@@ -17,6 +17,38 @@
                 line-height: 36px;
                 color: #333;
             }
+            .description_wrapper{
+                height: 50px;
+                display: block;
+                margin-bottom: 25px;
+                .img_wrapper{
+                    width: 70px;
+                    height: 50px;
+                }
+                
+                .description_content{
+                    width: 450px;
+                    height: 50px;
+                    overflow: auto;
+                    padding: 10px 0 0 0;
+                    .description_label{
+                        font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+                        font-weight: bold !important;
+                        letter-spacing: normal;
+                        text-rendering: optimizelegibility;
+                        font-size: 17px;
+                        margin-right: 10px;
+                    }
+                    .description_sub_label{
+                        font-size: 15px;
+                        line-height: 20px;
+                        color: #666;
+                        font-weight: normal;
+
+                    }
+                }
+            }
+            
         }
         .right_section{
             width: 400px;
