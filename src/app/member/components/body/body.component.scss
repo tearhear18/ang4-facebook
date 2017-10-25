@@ -1,12 +1,70 @@
 .body{
     margin: 43px 0 0 0;
     background: #e9ebee;
-    min-height: 600px;
     overflow: auto;
     .container{
         width: 980px;
-        height: 700px;
-        background: #fff;
+        min-height: 700px;
         margin: auto;
+    }
+    .cover_wrapper{
+        display: block;
+        height: 315px;
+        background: #000;
+        img{
+            height: 315px;
+            width: 978px;
+        }
+        .profile_pic_wrapper{
+            width: 168px;
+            height: 168px;
+            border-radius: 3px;
+            border: 1px solid #e5e5e5;
+            position: relative;
+            z-index: 10;
+            bottom: 0px;
+            top: -145px;
+            left: 15px;
+            overflow: hidden;
+            background: #fff;
+            img{
+                width: 160px;
+                height: 160px;
+                margin: 4px 4px;
+            }
+        }
+        .c_footer{
+            height: 100px;
+            width: 100%;
+            position: relative;
+            right: 0px;
+            top: -274px;
+            background: linear-gradient(rgba(0,0,0,0) 23%, rgba(0,0,0, .53));
+        }
+        border: 1px solid #d3d6db;
+        border-top:none;
+    }
+    .navigation_wrapper{
+        height: 43px;
+        display: block;
+        background: #fff;
+        border-radius: 0 0 3px 3px;
+        border: 1px solid #d3d6db;
+        border-top:none;
+    }
+
+    .content_wrapper{
+        margin-top: 20px;
+        min-height: 500px;
+        .left_content{
+            width: 350px;
+            height: 300px;
+            background: #fff;
+        }
+        .right_content{
+            width: 610px;
+            height: 300px;
+            background: #fff;
+        }
     }
 }
