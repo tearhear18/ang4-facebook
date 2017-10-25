@@ -69,12 +69,12 @@
         min-height: 500px;
         .left_content{
             width: 350px;
-            height: 300px;
+            height: auto;
             
         }
         .right_content{
             width: 610px;
-            min-height: 300px;
+            height: auto;
         }
     }
 }
