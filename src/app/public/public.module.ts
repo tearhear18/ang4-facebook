@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { PublicRoutingModule } from './public-routing.module';
 import { PublicComponent } from './public.component';
@@ -12,7 +13,8 @@ import { LoginComponent } from './components/header/login/login.component';
 @NgModule({
   imports: [
     CommonModule,
-    PublicRoutingModule
+    PublicRoutingModule,
+    FormsModule
   ],
   declarations: [PublicComponent, HeaderComponent, BodyComponent, FooterComponent, RegistrationComponent, LoginComponent]
 })

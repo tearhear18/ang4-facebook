@@ -1,5 +1,5 @@
 <div class="login_wrapper">
-  <form>
+  <form (submit)="login()">
     <div class="login_btn_container rfloat">
         <div class="form-group">
           <button>Log In</button>
@@ -8,13 +8,13 @@
     <div class="email_container rfloat">
         <div class="form-group">
           <label for="Email or Phone">Password</label>
-          <input type="text">
+          <input type="text" [(ngModel)]="user.password" name="password" />
         </div>
     </div>
     <div class="email_container rfloat  ">
         <div class="form-group">
           <label for="Email or Phone">Email or Phone</label>
-          <input type="text">
+          <input type="text" [(ngModel)]="user.email_phone" name="email_phone" />
         </div>
     </div>
   </form>
