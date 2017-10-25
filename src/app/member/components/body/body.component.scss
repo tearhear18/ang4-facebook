@@ -40,6 +40,17 @@
             right: 0px;
             top: -274px;
             background: linear-gradient(rgba(0,0,0,0) 23%, rgba(0,0,0, .53));
+            overflow: hidden;
+            .cf_content{
+                height: 70px;
+                width: 770px;
+                margin-top:30px;
+                h1{
+                    color: #fff;
+                    text-rendering: optimizelegibility;
+                    text-shadow: 0 0 3px rgba(0,0,0,.8);
+                }
+            }
         }
         border: 1px solid #d3d6db;
         border-top:none;
