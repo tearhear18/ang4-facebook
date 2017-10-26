@@ -3,6 +3,9 @@ import { IPost } from '../../../..//services/post/post-interface';
 import { PostService } from '../../../../services/post/post.service';
 
 
+import {NgRedux, select } from '@angular-redux/store';
+import { CREATE_POST } from '../../../../action';
+import { IAppState } from '../../../../store';
 
 @Component({
   selector: 'member-app-post',
@@ -15,10 +18,8 @@ export class PostComponent implements OnInit {
   public rowSize : number;
   public toggleExpander : boolean;
   public post : IPost;
-  private post_id : number;
 
-
-  constructor( private _post: PostService ) { 
+  constructor( private _post: PostService, private ngRedux: NgRedux<IAppState> ) { 
     this.rowSize = 5;
     this.toggleExpander = false;
   }
@@ -31,13 +32,15 @@ export class PostComponent implements OnInit {
     this.toggleExpander = !this.toggleExpander;  
   }
   createPost( postMessage : string ){
+    this.post ={
+      id: this._post.getSize()+1,
+      content:postMessage,
+      comments:[]
+    }
     
-    // this.post ={
-    //   id: this._post.getSize()+1,
-    //   content: postMessage,
-    //   comments:[]
-    // }
-    // this._post.addPost( this.post );
+    //this._post.addPost( this.post );
+    this.ngRedux.dispatch({type: CREATE_POST, post: this.post });
+    
   }
 
 }

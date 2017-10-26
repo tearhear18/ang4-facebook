@@ -4,7 +4,7 @@ import { IPost } from './post-interface';
 @Injectable()
 export class PostService {
 
-  private posts : any[];
+  public posts : IPost[];
 
   constructor() { 
     this.posts = [
@@ -29,6 +29,7 @@ export class PostService {
   }
   addPost( post: IPost ){
     this.posts.push( post );
+
   }
   getSize(){
     return this.posts.length;

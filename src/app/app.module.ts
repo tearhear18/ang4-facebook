@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PublicModule } from './public/public.module';
 import { MemberModule } from './member/member.module';
 
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,8 +17,11 @@ import { MemberModule } from './member/member.module';
     AppRoutingModule,
     PublicModule,
     MemberModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}
