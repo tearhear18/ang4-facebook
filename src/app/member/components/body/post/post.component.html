@@ -7,13 +7,12 @@
       <img src="./assets/images/profile-small.jpg" alt="">
     </div>
     <div class="comment_section rfloat">
-      <textarea name="" id="" cols="30" rows="4">What's on your mind?</textarea>
-      
+      <textarea ngModel #postMessage cols="30" rows="{{rowSize}}" (keyup.enter)="expandSize()">What's on your mind?</textarea>
     </div>
     
     <div class="clearfix"></div>
   </div>
   <div class="footer text-right">
-    <button>Post</button>
+    <button (click)="createPost(postMessage.value)">Post</button>
   </div>
 </div>
