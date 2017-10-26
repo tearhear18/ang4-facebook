@@ -29,10 +29,10 @@ export class PostService {
   }
   addPost( post: IPost ){
     this.posts.push( post );
-    console.log( this.posts );
   }
   getSize(){
     return this.posts.length;
   }
+ 
 
 }

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { IPost } from '../../../..//services/post/post-interface';
 import { PostService } from '../../../../services/post/post.service';
 
+
+
 @Component({
   selector: 'member-app-post',
   templateUrl: './post.component.html',
@@ -16,7 +18,7 @@ export class PostComponent implements OnInit {
   private post_id : number;
 
 
-  constructor( private _post: PostService) { 
+  constructor( private _post: PostService ) { 
     this.rowSize = 5;
     this.toggleExpander = false;
   }
@@ -29,12 +31,13 @@ export class PostComponent implements OnInit {
     this.toggleExpander = !this.toggleExpander;  
   }
   createPost( postMessage : string ){
-    this.post ={
-      id: this._post.getSize()+1,
-      content: postMessage,
-      comments:[]
-    }
-    this._post.addPost( this.post );
+    
+    // this.post ={
+    //   id: this._post.getSize()+1,
+    //   content: postMessage,
+    //   comments:[]
+    // }
+    // this._post.addPost( this.post );
   }
 
 }
