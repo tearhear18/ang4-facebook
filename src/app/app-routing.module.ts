@@ -3,18 +3,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { PublicComponent } from './public/public.component';
 import { PublicModule } from './public/public.module';
 
-import { MemberModule } from './member/member.module';
-import { MemberpageComponent } from './member/memberpage.component'
 
 const routes: Routes = [
   { 
     path: '', 
     component: PublicComponent, 
     children: [
-      { path: '', loadChildren: () => PublicModule }
+      { path: 'public', loadChildren: './public/public.module#PublicModule' },
+      { path: '', redirectTo: 'public', pathMatch: 'full' } 
     ]
   }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
