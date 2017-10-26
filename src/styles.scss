@@ -44,3 +44,24 @@ body {
     border-radius: 3px;
     border: 1px solid #d3d6db;
 }
+
+/** facebook control icons***/
+.fb-icon{
+    background-image: url('./assets/images/icons.png');
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    display: block;
+}
+.fb-like{
+    background-size: 49px 387px;
+    background-position: 0 -193px;
+}
+.fb-comment{
+    background-size: 49px 387px;
+    background-position: 0 -155px;
+}
+.fb-share{
+    background-size: 49px 387px;
+    background-position: -19px -269px;
+}
